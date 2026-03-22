@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Chiquito — Bar & Tapas · Algeciras</title>
+    <meta
+      name="description"
+      content="Bar El Chiquito, el sabor auténtico de Algeciras. Tapas frescas, pescaíto frito y la mejor fritura del Campo de Gibraltar."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/logo.webp" alt="El Chiquito" class="navbar-logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li><a href="carta.html" class="nav-cta">Ver Carta</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-label"> Algeciras, Campo de Gibraltar</span>
+        <h1 class="hero-title">El <span>Chiquito</span></h1>
+        <p class="hero-subtitle">
+          El sabor auténtico del sur. Pescaíto fresco, tapas con alma y frituras
+          que huelen a mar desde la puerta.
+        </p>
+        <div class="hero-actions">
+          <a href="carta.html" class="btn btn-primary"
+            ><i class="fa-solid fa-book-open"></i> Ver la Carta</a
+          >
+          <a href="#nosotros" class="btn btn-outline"
+            ><i class="fa-solid fa-arrow-down"></i> Conocernos</a
+          >
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Descubre</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="nosotros">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img reveal">
+            <img
+              src="assets/chiquitoMain.png"
+              alt="Interior del bar El Chiquito"
+            />
+          </div>
+          <div class="about-text reveal">
+            <span class="section-label">Nuestra historia</span>
+            <h2 class="section-title">
+              Un bar de siempre,<br />con el sabor de siempre
+            </h2>
+            <p class="section-subtitle">
+              El Chiquito lleva décadas siendo un referente en Algeciras para
+              quienes buscan la auténtica cocina andaluza. Nacimos como un
+              pequeño bar de barrio y hoy seguimos con el mismo espíritu:
+              producto fresco, elaboración honesta y trato cercano.
+            </p>
+            <p class="section-subtitle" style="margin-top: 1rem">
+              Desde nuestras croquetas caseras hasta el tomate relleno o las
+              gambas a la plancha, cada plato respeta las raíces de la cocina
+              del Campo de Gibraltar. Sin artificios, con mucho sabor.
+            </p>
+            <div class="about-features">
+              <div class="feature-item reveal">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-fish-fins"></i>
+                </div>
+                <div>
+                  <h4>Pescado fresco</h4>
+                  <p>Seleccionado diariamente en lonja local</p>
+                </div>
+              </div>
+              <div class="feature-item reveal">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-drumstick-bite"></i>
+                </div>
+                <div>
+                  <h4>Carne ibérica</h4>
+                  <p>Presa, secreto y lomo de primera calidad</p>
+                </div>
+              </div>
+              <div class="feature-item reveal">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                  <h4>Hecho a mano</h4>
+                  <p>Croquetas y rellenos elaborados cada día</p>
+                </div>
+              </div>
+              <div class="feature-item reveal">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <div>
+                  <h4>Ambiente familiar</h4>
+                  <p>Bienvenidos todos, de lunes a domingo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EQUIPO CARRUSEL -->
+        <div class="team-carousel-wrap reveal" style="margin-top: 5rem">
+          <div style="text-align: center; margin-bottom: 2.5rem">
+            <span class="section-label">Las personas detrás del mostrador</span>
+            <h3 class="section-title" style="font-size: 1.8rem">
+              Nuestro equipo
+            </h3>
+          </div>
+          <div class="team-track-container">
+            <button class="team-arrow team-arrow-left" aria-label="Anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="team-track-viewport">
+              <div class="team-track" id="teamTrack">
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Juan" />
+                  </div>
+                  <h4 class="team-name">Juan Manuel</h4>
+                  <span class="team-role">El manda más</span>
+                  <p class="team-bio">
+                    Capitán del barco y guardián de las recetas secretas. Cuando
+                    algo sale perfecto, probablemente empezó en su cabeza… y a
+                    las 7 de la mañana.
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Manolo" />
+                  </div>
+                  <h4 class="team-name">Lucía</h4>
+                  <span class="team-role">Jefa de barra</span>
+                  <p class="team-bio">
+                    Velocidad de vértigo y memoria de elefante. Puede servir
+                    cinco mesas, preparar tres cafés y guiñarte un ojo… todo en
+                    el mismo minuto.
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Lola" />
+                  </div>
+                  <h4 class="team-name">Loli</h4>
+                  <span class="team-role">Cocinera</span>
+                  <p class="team-bio">
+                    Responsable oficial de que digas “solo un postre”… y acabes
+                    pidiendo dos. Sus dulces tienen poderes mágicos (y cero
+                    remordimientos).
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Carmen" />
+                  </div>
+                  <h4 class="team-name">Roxana</h4>
+                  <span class="team-role">Jefa de cocina</span>
+                  <p class="team-bio">
+                    La mente maestra entre fogones. Donde otros ven
+                    ingredientes, ella ve obras de arte… y platos que
+                    desaparecen en segundos.
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Carmen" />
+                  </div>
+                  <h4 class="team-name">Juan</h4>
+                  <span class="team-role">Encargado de sala</span>
+                  <p class="team-bio">
+                    Tu GPS dentro del restaurante. Sabe dónde sentarte, qué
+                    recomendarte… y hasta lo que te apetece antes de que lo
+                    digas.
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Rocío" />
+                  </div>
+                  <h4 class="team-name">Manolo</h4>
+                  <span class="team-role">Camarero</span>
+                  <p class="team-bio">
+                    Detrás de la barra desde que abrimos. Su serranito de queso
+                    tiene lista de espera propia.
+                  </p>
+                </div>
+
+                <div class="team-card">
+                  <div class="team-avatar">
+                    <img src="" alt="Rafa" />
+                  </div>
+                  <h4 class="team-name">Oleh</h4>
+                  <span class="team-role">Camarero</span>
+                  <p class="team-bio">
+                    Mitad camarero, mitad lector de mentes. Si dudas qué pedir,
+                    tranquilo… él ya lo sabe y seguro que acierta.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="team-arrow team-arrow-right" aria-label="Siguiente">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="team-dots" id="teamDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="specialties" id="especialidades">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 0.5rem">
+          <span class="section-label reveal">Lo que más nos piden</span>
+          <h2 class="section-title reveal">Nuestras especialidades</h2>
+          <p class="section-subtitle reveal" style="margin: 0 auto">
+            Platos que han pasado de generación en generación y siguen siendo
+            los favoritos de quienes nos visitan.
+          </p>
+        </div>
+        <div class="specialties-grid">
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&auto=format&fit=crop&q=80"
+                alt="Fritura de pescado"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Fritura Tierra y Mar</h3>
+              <p>
+                Una selección generosa de pescados y mariscos fritos al punto
+                exacto, crujientes por fuera y jugosos por dentro.
+              </p>
+              <span class="spec-price">22,00 €</span>
+            </div>
+          </div>
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80"
+                alt="Pulpo a la gallega"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Pulpo a la Gallega</h3>
+              <p>
+                Pulpo tierno sobre cama de patata, aceite de oliva virgen extra,
+                pimentón de la Vera y sal gruesa.
+              </p>
+              <span class="spec-price">18,00 €</span>
+            </div>
+          </div>
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&auto=format&fit=crop&q=80"
+                alt="Croquetas caseras"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Tomate relleno</h3>
+              <p>
+                Elaborados cada mañana con cariño y un relleno generoso de carne
+                jugosa.
+              </p>
+              <span class="spec-price">11,00 €</span>
+            </div>
+          </div>
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&auto=format&fit=crop&q=80"
+                alt="Gambas a la plancha"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Gambas a la Plancha</h3>
+              <p>
+                Gambas frescas pasadas por la plancha con un toque de sal, limón
+                y aceite. Sencillez insuperable.
+              </p>
+              <span class="spec-price">25,00 €</span>
+            </div>
+          </div>
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80"
+                alt="Secreto ibérico"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Secreto Ibérico</h3>
+              <p>
+                Corte especial del cerdo ibérico, jugoso y con un sabor intenso.
+                Servido a la plancha con guarnición.
+              </p>
+              <span class="spec-price">18,00 €</span>
+            </div>
+          </div>
+          <div class="spec-card reveal">
+            <div class="spec-img">
+              <img
+                src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=600&auto=format&fit=crop&q=80"
+                alt="Cazón en adobo"
+              />
+            </div>
+            <div class="spec-body">
+              <h3>Paponazo</h3>
+              <p>
+                El bienmesabe gaditano en todo su esplendor. Cazón marinado en
+                especias y frito en su punto justo.
+              </p>
+              <span class="spec-price">14,00 €</span>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="carta.html" class="btn btn-dark reveal"
+            ><i class="fa-solid fa-utensils"></i> Ver carta completa</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="reviews" id="resenas">
+      <div class="container">
+        <div class="reviews-header">
+          <span class="section-label reveal">Lo que dicen de nosotros</span>
+          <h2 class="section-title reveal">Reseñas de clientes</h2>
+          <p class="section-subtitle reveal">
+            La opinión de quienes nos visitan es el mejor reflejo de lo que
+            hacemos.
+          </p>
+          <div class="stars-avg reveal">
+            <span class="stars"
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star-half-stroke"></i
+            ></span>
+            <span class="avg-score">4.7</span>
+            <span class="avg-count">basado en +320 valoraciones</span>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card reveal">
+            <span class="review-quote">"</span>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              Uno de los mejores sitios para tapear en Algeciras a buen precio.
+              El trato exquisito, muy amables y atentos. Especialmente simple y
+              sabroso el montadito de chorizo picante y huevo de codorniz, una
+              delicia.
+            </p>
+            <div class="review-author">
+              <img
+                class="review-avatar"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80"
+                alt="María G."
+              />
+              <div>
+                <h4>Víctor Manuel S.</h4>
+                <span>Google Maps · hace 2 semanas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <span class="review-quote">"</span>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">
+              Típico bar de toda la vida, de los que ya no quedan. Carta muy
+              variada de tapas a precio popular. Mantiene la esencia del típico
+              bar de tapas de toda la vida y sigue exactamente igual tras el
+              paso de los años.
+            </p>
+            <div class="review-author">
+              <img
+                class="review-avatar"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80"
+                alt="Javier M."
+              />
+              <div>
+                <h4>Juan Rome</h4>
+                <span>Google Maps · hace 1 mes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <span class="review-quote">"</span>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="review-text">
+              El lugar es muy tradicional y tiene una gran variedad de tapas,
+              montaditos y platos a la carta. La atención de los meseros es muy
+              buena y el lugar puede ser visitado por toda una familia, incluido
+              niños.
+            </p>
+            <div class="review-author">
+              <img
+                class="review-avatar"
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80"
+                alt="Lucía P."
+              />
+              <div>
+                <h4>Gianfranco B.</h4>
+                <span>Google Maps · hace 3 semanas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIO & CONTACTO -->
+    <section class="contact" id="horario">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal">
+            <span class="section-label">Cuándo encontrarnos</span>
+            <h2 class="section-title">Horario<br />y contacto</h2>
+            <ul class="horario-list">
+              <li><span>Lunes</span><span>Cerrado</span></li>
+              <li><span>Martes</span><span>Cerrado</span></li>
+              <li>
+                <span>Miércoles</span><span>12:00 – 16:00 20:00 - 00:00</span>
+              </li>
+              <li>
+                <span>Jueves</span><span>12:00 – 16:00 20:00 - 00:00</span>
+              </li>
+              <li>
+                <span>Viernes</span><span>12:00 – 16:00 20:00 - 00:00</span>
+              </li>
+              <li>
+                <span>Sábado</span><span>12:00 – 16:00 20:00 - 00:00</span>
+              </li>
+              <li>
+                <span>Domingo</span><span>12:00 – 16:00 20:00 - 00:00</span>
+              </li>
+            </ul>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span
+                  >C. Infante Don Pedro, 3<br />
+                  11201 Algeciras, Cádiz</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="cta-phone">
+              <p>¿Quieres reservar mesa o consultar disponibilidad?</p>
+              <a href="tel:+34 696 797 418" class="btn btn-phone">
+                <i class="fa-solid fa-phone"></i> &nbsp; +34 696 797 418
+              </a>
+            </div>
+            <div style="margin-top: 2rem; text-align: center">
+              <a
+                href="carta.html"
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-solid fa-book-open"></i> Ver la carta completa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.webp" alt="El Chiquito" class="footer-logo" />
+          <p>
+            Bar de tapas y pescaíto en el corazón de Algeciras. Sabor auténtico,
+            producto fresco y trato de siempre.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contacto</h4>
+          <p>
+            C. Infante Don Pedro, 3<br />
+            11201 Algeciras, Cádiz<br />
+            <a href="tel:+34696797418">+34 696 797 418</a><br />
+          </p>
+        </div>
+      </div>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5794.081063082953!2d-5.4459231512321065!3d36.13396086297535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c94cc4cfba1b1%3A0x28b49e5b8cda1c53!2sBar%20El%20Chiquito!5e0!3m2!1ses!2ses!4v1774202901688!5m2!1ses!2ses"
+          width="100%"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2025 El Chiquito · Bar & Tapas · Algeciras &nbsp;·&nbsp; Todos los
+          derechos reservados
+        </p>
+        <p>
+          Powered by
+          <a href="netaliastudio.com" target="_blank">Netalia Studio</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
