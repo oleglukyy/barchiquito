@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap");
-
 :root {
   --color-primary: #8b2500;
   --color-secondary: #c4501a;
@@ -449,7 +447,7 @@ section {
 
 .specialties-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -471,7 +469,7 @@ section {
 }
 
 .spec-img {
-  height: 200px;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 
@@ -479,6 +477,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
@@ -903,38 +902,38 @@ footer {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1px;
-  background: var(--color-cream);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3.5rem;
 }
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.1rem 1.5rem;
-  background: #fff;
-  gap: 1rem;
-  transition: background var(--transition);
-}
-
-.menu-item:hover {
-  background: #fffaf4;
+  align-items: baseline;
+  padding: 0.65rem 0;
+  background: transparent;
+  gap: 0;
+  border-bottom: 1px solid rgba(139, 37, 0, 0.08);
 }
 
 .menu-item-name {
   font-size: 0.95rem;
   color: var(--color-text);
   font-weight: 400;
+  flex-shrink: 0;
+  max-width: 65%;
+}
+
+.menu-item-dots {
+  flex: 1;
+  border-bottom: 1.5px dotted rgba(196, 80, 26, 0.35);
+  margin: 0 8px 5px;
+  min-width: 12px;
 }
 
 .menu-item-price {
   font-weight: 700;
   color: var(--color-secondary);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -1333,14 +1332,9 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .postres-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .montaditos-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .menu-grid {
     grid-template-columns: 1fr;
+    gap: 0;
   }
   .navbar {
     padding: 1rem 1.5rem;
